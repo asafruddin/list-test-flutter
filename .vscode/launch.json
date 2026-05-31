@@ -1,0 +1,87 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Production",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "toolArgs": [
+                "--flavor",
+                "production"
+            ],
+            "dartDefines": {
+                "APP_FLAVOR": "production"
+            }
+        },
+        {
+            "name": "Tenant",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "toolArgs": [
+                "--flavor",
+                "tenant"
+            ],
+            "dartDefines": {
+                "APP_FLAVOR": "tenant"
+            }
+        },
+        {
+            "name": "Production Profile",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "flutterMode": "profile",
+            "toolArgs": [
+                "--flavor",
+                "production"
+            ],
+            "dartDefines": {
+                "APP_FLAVOR": "production"
+            }
+        },
+        {
+            "name": "Tenant Profile",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "flutterMode": "profile",
+            "toolArgs": [
+                "--flavor",
+                "tenant"
+            ],
+            "dartDefines": {
+                "APP_FLAVOR": "tenant"
+            }
+        },
+        {
+            "name": "Production Release",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "flutterMode": "release",
+            "toolArgs": [
+                "--flavor",
+                "production"
+            ],
+            "dartDefines": {
+                "APP_FLAVOR": "production"
+            }
+        },
+        {
+            "name": "Tenant Release",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "flutterMode": "release",
+            "toolArgs": [
+                "--flavor",
+                "tenant"
+            ],
+            "dartDefines": {
+                "APP_FLAVOR": "tenant"
+            }
+        }
+    ]
+}
