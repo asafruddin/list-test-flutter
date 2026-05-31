@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../app/app_flavor.dart';
 import '../../domain/entities/post.dart';
 import '../../../widgets/meta_badge.dart';
 
@@ -11,6 +12,7 @@ class PostCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+
     return Card(
       margin: EdgeInsets.zero,
       child: Padding(
@@ -23,6 +25,10 @@ class PostCard extends StatelessWidget {
                 MetaBadge(label: 'User ${post.userId}'),
                 const SizedBox(width: 6),
                 MetaBadge(label: '#${post.id}'),
+                if (AppFlavorConfig.current.flavor == AppFlavor.tenant) ...[
+                  const SizedBox(width: 6),
+                  const MetaBadge(label: 'Tenant'),
+                ],
               ],
             ),
             const SizedBox(height: 10),

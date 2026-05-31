@@ -10,9 +10,9 @@
                 "--flavor",
                 "production"
             ],
-            "dartDefines": {
-                "APP_FLAVOR": "production"
-            }
+            "args": [
+                "--dart-define=APP_FLAVOR=production"
+            ]
         },
         {
             "name": "Tenant",
@@ -23,9 +23,9 @@
                 "--flavor",
                 "tenant"
             ],
-            "dartDefines": {
-                "APP_FLAVOR": "tenant"
-            }
+            "args": [
+                "--dart-define=APP_FLAVOR=tenant"
+            ]
         },
         {
             "name": "Production Profile",
@@ -37,9 +37,9 @@
                 "--flavor",
                 "production"
             ],
-            "dartDefines": {
-                "APP_FLAVOR": "production"
-            }
+            "args": [
+                "--dart-define=APP_FLAVOR=production"
+            ]
         },
         {
             "name": "Tenant Profile",
@@ -51,9 +51,9 @@
                 "--flavor",
                 "tenant"
             ],
-            "dartDefines": {
-                "APP_FLAVOR": "tenant"
-            }
+            "args": [
+                "--dart-define=APP_FLAVOR=tenant"
+            ]
         },
         {
             "name": "Production Release",
@@ -65,9 +65,9 @@
                 "--flavor",
                 "production"
             ],
-            "dartDefines": {
-                "APP_FLAVOR": "production"
-            }
+            "args": [
+                "--dart-define=APP_FLAVOR=production"
+            ]
         },
         {
             "name": "Tenant Release",
@@ -79,9 +79,9 @@
                 "--flavor",
                 "tenant"
             ],
-            "dartDefines": {
-                "APP_FLAVOR": "tenant"
-            }
+            "args": [
+                "--dart-define=APP_FLAVOR=tenant"
+            ]
         }
     ]
 }
